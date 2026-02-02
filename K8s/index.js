@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.json({ status: 'ok', service: 'pull kubectl changes v2', test:"102" });
+  res.json({ status: 'ok', service: 'lets try one more time', test:"103" });
 });
 
 const PORT = process.env.PORT || 3000;
