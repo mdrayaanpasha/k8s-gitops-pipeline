@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: argocd-deployment
-        image: mdrayaanpasha/argocd:eacfe39
+        image: mdrayaanpasha/argocd:e2cfbf4
         imagePullPolicy: Always
         resources:
           limits:
