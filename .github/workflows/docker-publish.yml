@@ -30,7 +30,7 @@ jobs:
 
       - name: Update Kubernetes manifest
         run: |
-          sed -i "s|image: mdrayaanpasha/argocd:.*|image: mdrayaanpasha/argocd:${IMAGE_TAG}|g" K8s/deployment.yml
+          sed -i "s|image: mdrayaanpasha/argocd:.*|image: mdrayaanpasha/argocd:${IMAGE_TAG}|g" K8s/manifests/deployment.yml
 
       - name: Commit and push manifest update
         run: |
