@@ -42,5 +42,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add K8s/manifests/deployment.yml
-          git commit -m "deploy: image ${IMAGE_TAG}"
+          git commit -m "deploy: image ${IMAGE_TAG} [skip ci]"
           git push
