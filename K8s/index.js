@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.json({ status: 'ok', service: 'express-gitops-demo', test:"101" });
+  res.json({ status: 'ok', service: 'pull kubectl changes', test:"101" });
 });
 
 const PORT = process.env.PORT || 3000;
