@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build image
-        run: docker build -t mdrayaanpasha/argocd:${{ env.IMAGE_TAG }} .
+        run: docker build -t mdrayaanpasha/argocd:${{ env.IMAGE_TAG }} ./K8s
 
       - name: Push image
         run: docker push mdrayaanpasha/argocd:${{ env.IMAGE_TAG }}
